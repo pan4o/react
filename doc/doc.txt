@@ -1,9 +1,28 @@
 git init
 npm init
+
 create server.js и заполнить
 create index.html
+create .gitinit and add /node_modules
+
 npm install express --save
 npm install body-parser --save
+npm install webpack --save
+npm install babel-core --save
+npm install babel-loader --save
+npm install babel-preset-es2015 --save
+npm install babel-preset-react --save
+npm install react --save
+npm install react-dom --save
+
+create .babelrc - заполнить
+
+add entry-point.js в который добавляется index.js - верхний js файл с рендером главного компонента
+
+create webpack.config.js
+
+add input(entry-point.js) outpup and loaders
+
 
 
 
