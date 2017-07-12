@@ -1,0 +1,9 @@
+git init
+npm init
+create server.js и заполнить
+create index.html
+npm install express --save
+npm install body-parser --save
+
+
+
