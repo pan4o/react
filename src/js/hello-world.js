@@ -21,7 +21,7 @@ class HelloWorld extends React.Component {
 
 	render() {
 		return (
-			<h1 style={{background: this.props.background}}>
+			<h1 className="main-title" style={{background: this.props.background}}>
 				Hello World and Hello {this.formatUser(this.me)}!
 			</h1>
 		);
