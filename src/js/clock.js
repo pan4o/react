@@ -15,8 +15,6 @@ class Clock extends React.Component {
 
 	componentDidMount () {
 
-		console.log('didMount');
-
 		this.timerID = setInterval(
 			() => this.tick(),
 			1000
@@ -25,8 +23,6 @@ class Clock extends React.Component {
 	}
 
 	componentWillUnmount () {
-
-		console.log('willUnmount');
 
 		clearInterval(this.timerID);
 

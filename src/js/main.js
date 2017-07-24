@@ -15,6 +15,39 @@ author = {
 
 class Main extends React.Component {
 
+	constructor(props) {
+
+		super(props);
+
+		this.state = {
+			first: 'first',
+			second: 'second'
+		}
+
+	}
+
+	componentDidMount() {
+
+		const duration = 2000;
+
+		this.timer = setTimeout(() => {
+
+			this.setState({
+				first: 'second'
+			});
+
+			this.timer2 = setTimeout(() => {
+
+				this.setState({
+					second: 'first'
+				});
+
+			}, duration)
+
+		}, duration);
+
+	}
+
 	render () {
 		return (
 			<div className="hello-container">
@@ -27,6 +60,8 @@ class Main extends React.Component {
 				/>
 				<Comment author={author} text="This is a text, dude" />
 				<Clock />
+				<p>{this.state.first}</p>
+				<p>{this.state.second}</p>
 			</div>
 		);
 	}
@@ -34,3 +69,5 @@ class Main extends React.Component {
 }
 
 export default Main;
+
+//https://facebook.github.io/react/docs/handling-events.html
