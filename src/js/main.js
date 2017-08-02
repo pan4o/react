@@ -5,6 +5,7 @@ import City from './city';
 import Comment from './comment';
 import Clock from './clock';
 import Toggle from './toggle';
+import Greeting from './greeting';
 
 var city = {
 	url: 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/dumbo_brooklyn_bridge_park_julienne_schaer_0732_fdff1de5-9486-480c-a1c7-4135d784c75f.jpg'
@@ -65,6 +66,8 @@ class Main extends React.Component {
 				<p>{this.state.second}</p>
 
 				<Toggle />
+				<Greeting isLoggedIn={false} />
+				<Greeting isLoggedIn={true} />
 			</div>
 		);
 	}
@@ -73,4 +76,4 @@ class Main extends React.Component {
 
 export default Main;
 
-//https://facebook.github.io/react/docs/handling-events.html
+//https://facebook.github.io/react/docs/conditional-rendering.html#element-variables
