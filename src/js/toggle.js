@@ -47,5 +47,3 @@ class Toggle extends React.Component {
 }
 
 export default Toggle;
-
-//https://facebook.github.io/react/docs/conditional-rendering.html
