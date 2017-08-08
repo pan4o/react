@@ -3,10 +3,6 @@ import React from 'react';
 
 class NumberList extends React.Component {
 
-	constructor(props) {
-		super(props);
-	}
-
 	render () {
 
 		const numbers = this.props.numbers;

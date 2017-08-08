@@ -100,3 +100,5 @@ class Main extends React.Component {
 }
 
 export default Main;
+
+//https://facebook.github.io/react/docs/lists-and-keys.html#extracting-components-with-keys
