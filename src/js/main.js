@@ -10,6 +10,7 @@ import TestButton from './testfunc';
 import Mailbox from './mailbox';
 import Page from './page';
 import NumberList from './number-list';
+import ListItem from './listitem';
 
 var city = {
 	url: 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/dumbo_brooklyn_bridge_park_julienne_schaer_0732_fdff1de5-9486-480c-a1c7-4135d784c75f.jpg'
@@ -101,4 +102,4 @@ class Main extends React.Component {
 
 export default Main;
 
-//https://facebook.github.io/react/docs/lists-and-keys.html#extracting-components-with-keys
+//https://facebook.github.io/react/docs/lists-and-keys.html#keys-must-only-be-unique-among-siblings

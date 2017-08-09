@@ -1,5 +1,6 @@
 
 import React from 'react';
+import ListItem from './listitem';
 
 class NumberList extends React.Component {
 
@@ -7,7 +8,7 @@ class NumberList extends React.Component {
 
 		const numbers = this.props.numbers;
 		const list = numbers.map((item, i) => 
-			<li key={i}>{item}</li>
+			<ListItem key={i} value={item} />
 		);
 
 		return <ul>{list}</ul>
