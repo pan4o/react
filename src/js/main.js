@@ -10,6 +10,7 @@ import TestButton from './testfunc';
 import Mailbox from './mailbox';
 import Page from './page';
 import NumberList from './number-list';
+import Blog from './blog';
 
 var city = {
 	url: 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/dumbo_brooklyn_bridge_park_julienne_schaer_0732_fdff1de5-9486-480c-a1c7-4135d784c75f.jpg'
@@ -19,7 +20,27 @@ author = {
 	name: 'Tom'
 },
 messages = ['react', 're:react', 're:re:react'],
-numbers = [1,2,3,4];
+numbers = [1,2,3,4],
+posts = [
+	{
+		id: 1,
+		title: 'Facebook',
+		link : 'https://www.facebook.com',
+		content: 'this is facebook'
+	},
+	{
+		id: 2,
+		title: 'Twitter',
+		link: 'https://www.twitter.com',
+		content: 'this is twitter'
+	},
+	{
+		id: 3,
+		title: 'Instagram',
+		link: 'https://www.instagram.com',
+		content: 'this is instagram'
+	}
+];
 
 
 
@@ -93,6 +114,8 @@ class Main extends React.Component {
 				<Page />
 
 				<NumberList numbers={[1,2,3,4,5,6,7]} />
+
+				<Blog posts={posts} />
 			</div>
 		);
 	}
@@ -101,4 +124,4 @@ class Main extends React.Component {
 
 export default Main;
 
-//https://facebook.github.io/react/docs/lists-and-keys.html#keys-must-only-be-unique-among-siblings
+//https://facebook.github.io/react/docs/lists-and-keys.html#embedding-map-in-jsx
