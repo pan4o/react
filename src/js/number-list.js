@@ -7,11 +7,16 @@ class NumberList extends React.Component {
 	render () {
 
 		const numbers = this.props.numbers;
-		const list = numbers.map((item, i) => 
-			<ListItem key={i} value={item} />
-		);
 
-		return <ul>{list}</ul>
+		return (
+			<ul>
+				{
+					numbers.map((number, i) =>
+						<ListItem key={i} value={number} />
+					)
+				}
+			</ul>
+		);
 
 	}
 

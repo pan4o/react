@@ -25,8 +25,7 @@ function Blog (props) {
 	return (
 		<div>
 			{sidebar}
-			<br/>
-			{post}
+			<div>{post}</div>
 		</div>
 	);
 

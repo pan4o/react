@@ -8,7 +8,7 @@ function Post (props) {
 			backgroundColor: '#f3f3f3',
 			border: '1px solid #000000',
 			margin: '10px',
-			float: 'left',
+			display: 'inline-block',
 			padding: '10px'
 		},
 		postTitle: {
