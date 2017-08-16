@@ -12,6 +12,7 @@ import Page from './page';
 import NumberList from './number-list';
 import Blog from './blog';
 import NameForm from './name-form';
+import EssayForm from './essay-form';
 
 var city = {
 	url: 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/dumbo_brooklyn_bridge_park_julienne_schaer_0732_fdff1de5-9486-480c-a1c7-4135d784c75f.jpg'
@@ -119,6 +120,8 @@ class Main extends React.Component {
 				<Blog posts={posts} />
 
 				<NameForm />
+
+				<EssayForm />
 			</div>
 		);
 	}
