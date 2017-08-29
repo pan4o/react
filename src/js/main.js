@@ -15,6 +15,7 @@ import NameForm from './name-form';
 import EssayForm from './essay-form';
 import FlavorForm from './flavor-form';
 import Reservation from './reservation';
+import Calculator from './calculator';
 
 var city = {
 	url: 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/dumbo_brooklyn_bridge_park_julienne_schaer_0732_fdff1de5-9486-480c-a1c7-4135d784c75f.jpg'
@@ -128,6 +129,8 @@ class Main extends React.Component {
 				<FlavorForm />
 
 				<Reservation />
+
+				<Calculator />
 			</div>
 		);
 	}
@@ -136,4 +139,4 @@ class Main extends React.Component {
 
 export default Main;
 
-//https://facebook.github.io/react/docs/forms.html#the-select-tag
+//https://facebook.github.io/react/docs/lifting-state-up.html
