@@ -2,6 +2,11 @@
 import React from 'react';
 import BoilingVerdict from './verdict';
 
+var scaleNames = {
+	c: 'Celsius',
+	f: 'Fahrenhei'
+};
+
 class Calculator extends React.Component {
 
 	constructor (props) {
@@ -29,10 +34,11 @@ class Calculator extends React.Component {
 	render () {
 
 		var temperature = this.state.temperature;
+		var scale = this.props.scale;
 
 		return (
 			<fieldset>
-				<legend>Enter temperature in Celsius:</legend>
+				<legend>Enter temperature in {scaleNames[scale]}:</legend>
 				<input
 					type="text"
 					onChange={this.handleChange}

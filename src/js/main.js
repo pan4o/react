@@ -130,7 +130,7 @@ class Main extends React.Component {
 
 				<Reservation />
 
-				<Calculator />
+				<Calculator scale="f" />
 			</div>
 		);
 	}
@@ -139,4 +139,4 @@ class Main extends React.Component {
 
 export default Main;
 
-//https://facebook.github.io/react/docs/lifting-state-up.html
+//https://facebook.github.io/react/docs/lifting-state-up.html#adding-a-second-input
