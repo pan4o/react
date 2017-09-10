@@ -133,7 +133,9 @@ class Main extends React.Component {
 
 				<Calculator scale="f" />
 
-				<WelcomeDialog />
+				<WelcomeDialog title="Test title" message="Test message">
+					This is props children
+				</WelcomeDialog>
 
 
 			</div>
